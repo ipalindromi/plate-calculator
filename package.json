@@ -1,10 +1,11 @@
 {
 	"name": "plate-calculator",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"description": "Calculates how many weight plates to put on a barbell to get a specific weight with the weights you have available",
-	"main": "plate-calculator.js",
+	"main": "dist/plate-calculator.js",
+	"jsnext:main:": "lib/index.js",
 	"scripts": {
-		"clean": "rm -r ./dist/*",
+		"clean": "rm -r ./dist/*.js",
 		"build": "npm run clean && webpack -p",
 		"start": "webpack-dev-server --config webpack.examples.js --hot --inline",
 		"test": "jasmine",

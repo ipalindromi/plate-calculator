@@ -10,6 +10,7 @@ module.exports = {
 		path : path.resolve(__dirname, "examples"),
 		filename : "bundle.js",
 		library : 'plateCalculator',
+		libraryTarget : 'umd',
 	},
 	module : {
 		rules : [

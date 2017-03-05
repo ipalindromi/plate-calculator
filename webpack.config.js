@@ -5,7 +5,9 @@ module.exports = {
 	entry : './lib/index.js',
 	output : {
 		filename : 'plate-calculator.js',
-		path : path.resolve(__dirname, 'dist')
+		path : path.resolve(__dirname, 'dist'),
+		library : 'plateCalculator',
+		libraryTarget : 'umd',
 	},
 	module : {
 		rules : [
