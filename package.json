@@ -1,0 +1,44 @@
+{
+	"name": "plate-calculator",
+	"version": "1.0.0",
+	"description": "Calculates how many weight plates to put on a barbell to get a specific weight with the weights you have available",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rm -r ./dist/*",
+		"build": "npm run clean && webpack -p",
+		"start": "webpack-dev-server --config webpack.examples.js --hot --inline",
+		"test": "jasmine",
+		"postpublish": "npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/ipalindromi/plate-calculator.git"
+	},
+	"keywords": [
+		"weightlifting",
+		"calculator"
+	],
+	"author": "Dustin Baldwin <dustin@dustinbaldwin.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ipalindromi/plate-calculator/issues"
+	},
+	"homepage": "https://github.com/ipalindromi/plate-calculator#readme",
+	"devDependencies": {
+		"babel-core": "^6.23.1",
+		"babel-eslint": "^7.1.1",
+		"babel-loader": "^6.3.2",
+		"babel-preset-env": "^1.2.0",
+		"babel-register": "^6.23.0",
+		"eslint": "^3.17.0",
+		"eslint-config-airbnb": "^14.1.0",
+		"eslint-plugin-import": "^2.2.0",
+		"eslint-plugin-jsx-a11y": "^4.0.0",
+		"eslint-plugin-react": "^6.10.0",
+		"html-loader": "^0.4.5",
+		"jasmine": "^2.5.3",
+		"jasmine-core": "^2.5.2",
+		"webpack": "^2.2.1",
+		"webpack-dev-server": "^2.4.1"
+	}
+}

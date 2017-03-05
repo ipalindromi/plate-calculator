@@ -1,0 +1,47 @@
+{
+	"extends": "airbnb",
+	"parser" : "babel-eslint",
+	"env" : {
+		"browser": true,
+	},
+	"rules" : {
+
+		"no-tabs" : 0,
+		"arrow-parens" : [2, "always"],
+
+		// indentation
+		"indent": [2, "tab", {
+			"SwitchCase": 1
+		}],
+		"react/jsx-indent": [2, "tab"],
+		"react/jsx-indent-props": [2, "tab"],
+
+		// spacing
+		"space-in-parens": [ 2, "never" ],
+		"key-spacing": [2, {
+			"beforeColon" : true,
+			"afterColon" : true,
+		}],
+		"array-bracket-spacing": [2, "never", {
+			"objectsInArrays" : true,
+			"arraysInArrays" : true,
+		}],
+		"no-mixed-spaces-and-tabs" : [2, "smart-tabs"],
+
+		// jsdoc
+		"valid-jsdoc": [2, {
+			"prefer": {
+				"return": "return",
+			},
+			"requireReturn": false,
+		}],
+		"require-jsdoc": [2, {
+			"require": {
+				"FunctionDeclaration": true,
+				"MethodDefinition": true,
+				"ClassDeclaration": true,
+				"ArrowFunctionExpression": true
+			},
+		}],
+	}
+}
