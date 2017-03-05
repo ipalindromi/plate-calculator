@@ -34,6 +34,12 @@ Options are passed in a second parameter. They have the following defaults:
 #### set : Array
 An array of plate sizes. Defaults to standard pound plates. Setting this variable will override the list of plates 
 entirely.
+
+#### returnClosest : Boolean = true
+By default the calculator will return the closest weight that is possible with the given set. For instance, if you 
+put in 46 pounds it will calculate to 45 if you don't have .5 pound plates.
+
+If you set this to false, the calculator will throw an error instead when matching the entered weight is impossible.
 #### barbellWeight : Number
 The weight of the barbell you're using. Standard olympic barbell (45 pounds) is assumed, but you can change it if 
 you're using a non standard bar (such as a curl bar)
