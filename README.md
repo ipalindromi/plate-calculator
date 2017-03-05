@@ -8,6 +8,7 @@ Useable from client or server side.
 
 ### NPM
 `npm install plate-calculator --save-dev`
+
 ### Browser
 Run `npm run build` and copy the `plate-calculator.js` file from the `dist` directory. Place it wherever you like in 
 your application and include it like normal.
@@ -40,16 +41,19 @@ By default the calculator will return the closest weight that is possible with t
 put in 46 pounds it will calculate to 45 if you don't have .5 pound plates.
 
 If you set this to false, the calculator will throw an error instead when matching the entered weight is impossible.
+
 #### barbellWeight : Number
 The weight of the barbell you're using. Standard olympic barbell (45 pounds) is assumed, but you can change it if 
 you're using a non standard bar (such as a curl bar)
+
 #### weightLimits : Object
 An object that tells the system what plates you have available.
 
 This is an object in the shape `{ 45:2, 35:0}` where the plate weight is the key and the quantity that 
 you have available is the value. In the given case, you have two 45 pound plates and 0 35 pound plates.
 
-Note: Null is assumed to be infinite, but 0 is treated as 0. Don't get them confused!
+Note: Null is assumed to be infinite, but 0 is treated as 0. Don't get them confused!gst
+
 #### addedPlates : Array
 Any plates that you own that aren't part of the standard set. For instance, if you own half pound plates:
 `addedPlates : [.5]`
@@ -62,8 +66,10 @@ The calculate function returns an object in the following shape:
 
 ### Node
 `const plateCalculator = require('plate-calculator');`
+
 ### Browser
 If you've included plate-calculator as a script, then you can run `plateCalculator.calculate()` as a global function.
+
 ### React / ES6
 `import plateCalculator from 'plate-calculator';`
 
