@@ -1,6 +1,6 @@
 {
   "name": "plate-calculator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Calculates how many weight plates to put on a barbell to get a specific weight with the weights you have available",
   "main": "dist/plate-calculator.js",
   "jsnext:main:": "lib/index.js",
