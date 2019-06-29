@@ -6,10 +6,10 @@
   "jsnext:main:": "lib/index.js",
   "scripts": {
     "clean": "rm -r ./dist/*.js",
-    "build": "npm run clean && webpack -p",
+    "build": "webpack -p",
     "start": "webpack-dev-server --config webpack.examples.js --hot --inline",
     "test": "jasmine",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
