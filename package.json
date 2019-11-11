@@ -40,6 +40,6 @@
     "jasmine": "^2.5.3",
     "jasmine-core": "^2.5.2",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
+    "webpack-dev-server": "^3.1.11"
   }
 }
